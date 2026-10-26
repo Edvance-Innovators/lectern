@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Overlay Presenter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="doc">
+    <h2>1. Upload document</h2>
+    <input type="file" id="file" accept=".pdf,.docx,.pptx">
+    <div id="status"></div>
+    <div id="chunks"></div>
+  </div>
+  <div id="side">
+    <h2>2. Generate overlay</h2>
+    <label>Level:
+      <select id="level">
+        <option value="primary">Primary</option>
+        <option value="secondary">Secondary</option>
+        <option value="university" selected>University</option>
+        <option value="public">Public talk</option>
+      </select>
+    </label>
+    <label>Detail:
+      <select id="detail">
+        <option value="brief">Brief</option>
+        <option value="standard" selected>Standard</option>
+        <option value="deep">Deep-dive</option>
+      </select>
+    </label>
+    <br>
+    <button id="gen" disabled>Generate overlay</button>
+    <button id="push" disabled>Send to audience</button>
+    <div id="preview">Select a chunk first.</div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
