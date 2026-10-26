@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+venv/
+.venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Env
+.env
+.env.local
+
+# Runtime
+uploads/*
+!uploads/.gitkeep
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
+
+# Build artifacts
+dist/
+build/
+*.pptx
+*.pdf
+!tests/fixtures/*.pdf
